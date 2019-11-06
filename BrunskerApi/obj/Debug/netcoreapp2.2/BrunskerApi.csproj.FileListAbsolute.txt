@@ -1,0 +1,14 @@
+D:\Dev\BrunskerChallenge\BrunskerApi\bin\Debug\netcoreapp2.2\BrunskerApi.deps.json
+D:\Dev\BrunskerChallenge\BrunskerApi\bin\Debug\netcoreapp2.2\BrunskerApi.runtimeconfig.json
+D:\Dev\BrunskerChallenge\BrunskerApi\bin\Debug\netcoreapp2.2\BrunskerApi.runtimeconfig.dev.json
+D:\Dev\BrunskerChallenge\BrunskerApi\bin\Debug\netcoreapp2.2\BrunskerApi.dll
+D:\Dev\BrunskerChallenge\BrunskerApi\bin\Debug\netcoreapp2.2\BrunskerApi.pdb
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.csprojAssemblyReference.cache
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.csproj.CoreCompileInputs.cache
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.RazorAssemblyInfo.cache
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.RazorAssemblyInfo.cs
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.AssemblyInfoInputs.cache
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.AssemblyInfo.cs
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.RazorTargetAssemblyInfo.cache
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.dll
+D:\Dev\BrunskerChallenge\BrunskerApi\obj\Debug\netcoreapp2.2\BrunskerApi.pdb

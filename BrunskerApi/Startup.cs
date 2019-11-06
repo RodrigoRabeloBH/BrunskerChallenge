@@ -25,6 +25,7 @@ namespace BrunskerApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddCors();
             
             services.AddScoped<IUserServices, UserServices>();
             services.AddScoped<IAuthServices, AuthServices>();
@@ -58,6 +59,7 @@ namespace BrunskerApi
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseMvc();
         }
     }
