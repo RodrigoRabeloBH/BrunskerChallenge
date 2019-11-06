@@ -37,7 +37,7 @@ namespace BrunskerApi.Services
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             }
         }
-        public async Task<User> Loging(string nickname, string password)
+        public async Task<User> Login(string nickname, string password)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Nickname == nickname);
             if(user == null)

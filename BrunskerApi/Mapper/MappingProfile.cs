@@ -8,7 +8,7 @@ namespace BrunskerApi.Mapper
     {
         public MappingProfile()
         {
-            CreateMap<User,UserForRegister>().ReverseMap();            
+            CreateMap<User,UserForRegister>().ReverseMap();                      
         }
     }
 }
