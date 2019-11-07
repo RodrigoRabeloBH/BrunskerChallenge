@@ -14,7 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 namespace BrunskerApi.Controllers
 {
     [ApiController]
-    [Route("api/[Controller]")]
+    [Route("api/[controller]")]
     public class AuthController:ControllerBase
     {
         private readonly IAuthServices _services;
@@ -73,6 +73,11 @@ namespace BrunskerApi.Controllers
                     token = tokenHandler.WriteToken (token)
                 });
             }
+        }
+        [HttpGet("teste")]    
+        public string Teste()
+        {
+            return "Rodrigo";
         }
     }
 }

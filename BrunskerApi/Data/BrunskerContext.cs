@@ -6,15 +6,13 @@ namespace BrunskerApi.Data
 {
     public class BrunskerContext:DbContext
     {
-        public DbSet<User> Users { get; set; }
-        public DbSet<Photo> Photos { get; set; }
+        public DbSet<User> Users { get; set; }   
 
         public BrunskerContext(DbContextOptions options):base(options){}
 
         protected override void  OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserMapping());
-            modelBuilder.ApplyConfiguration( new PhotoMapping());
+            modelBuilder.ApplyConfiguration(new UserMapping());         
         }
     }
 }

@@ -1,0 +1,15 @@
+{
+    "FullName":"John Doe",
+    "Ninckname":"Doe",
+    "Password":"password",
+    "Document":"08226024309",
+    "Gender":"Male",
+    "DateOfBirth":"21-10-1983",
+    "Email":"john@email.com",
+    "State":"California",
+    "City":"Los Angeles",
+    "Zipcode":"31630370",
+    "Phone":"31247614",
+    "CellPhone":"999456272",
+    "Image":"https://randomuser.me/api/portraits/men/48.jpg"
+  }
