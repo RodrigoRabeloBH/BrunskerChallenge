@@ -29,7 +29,7 @@ namespace BrunskerApi.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] UserForRegister userForRegister)
+        public async Task<IActionResult> Register(UserForRegister userForRegister)
         {
             userForRegister.Nickname = userForRegister.Nickname.ToUpper();
 

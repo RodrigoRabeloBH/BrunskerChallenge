@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-5 col-sm-12 card mx-auto p-2">
+        <form #loginForm="ngForm" (ngSubmit)="login()">
+            <div class="form-group">
+                <label for="nick">Nickname</label>
+                <input type="text" class="form-control" id="nick" required placeholder="batman" name="nickname" [(ngModel)]="model.nickname">       
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required name="password" [(ngModel)]="model.password" placeholder="Password">
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-info btn-sm mx-auto">Submit</button>
+            </div>            
+        </form>
+    </div>
+</div>
