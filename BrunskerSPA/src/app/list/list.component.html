@@ -1,3 +1,29 @@
-<p>
-  list works!
-</p>
+<div class="row">
+    <div class="col-md-6 col-sm-12" *ngFor="let user of users">
+        <div class="card mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="{{user.image}}" class="card-img img-thumbnail img-fluid" alt="{{user.nickname}}"
+                        style="height: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Name: </strong>{{user.fullName}}</h5>
+                        <p class="card-text">
+                            <strong>Location:</strong> {{user.city}}, {{user.state}}
+                        </p>                        
+                        <p class="card-text">
+                            <strong>Birth Date: </strong> {{user.dateOfBirth}} | <strong>Cpf: </strong> {{user.document}}
+                        </p>
+                        <p class="card-text">
+                            <strong>Email: </strong> {{user.email}} | <strong>Cell Phone: </strong> {{user.cellPhone}}
+                        </p>
+                        <p class="card-text">
+                            <strong>Know as: </strong> {{user.nickname}} | <strong>Gender: </strong> {{user.gender}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

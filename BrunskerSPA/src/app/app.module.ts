@@ -2,8 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { TooltipModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -13,6 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { ListComponent } from './list/list.component';
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+
 
 
 
@@ -24,14 +27,17 @@ import { HomeComponent } from './home/home.component';
       RegisterComponent,
       LoginComponent,
       ListComponent,
-      HomeComponent
+      HomeComponent,
+      UsersComponent
    ],
    imports: [
       BrowserModule,
       BsDropdownModule.forRoot(),
       HttpClientModule,
       FormsModule,
-      RouterModule.forRoot(appRoutes)
+      RouterModule.forRoot(appRoutes),
+      ReactiveFormsModule,
+      TooltipModule.forRoot(),
    ],
    providers: [
       AuthService

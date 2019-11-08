@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BrunskerApi.Migrations
 {
     [DbContext(typeof(BrunskerContext))]
-    [Migration("20191107175921_Initial")]
-    partial class Initial
+    [Migration("20191108023710_Seed")]
+    partial class Seed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

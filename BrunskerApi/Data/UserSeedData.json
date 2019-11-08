@@ -1,15 +1,47 @@
-{
-    "FullName":"John Doe",
-    "Ninckname":"Doe",
-    "Password":"password",
-    "Document":"08226024309",
-    "Gender":"Male",
-    "DateOfBirth":"21-10-1983",
-    "Email":"john@email.com",
-    "State":"California",
-    "City":"Los Angeles",
-    "Zipcode":"31630370",
-    "Phone":"31247614",
-    "CellPhone":"999456272",
-    "Image":"https://randomuser.me/api/portraits/men/48.jpg"
-  }
+[
+  {
+      "FullName":"Gabrielle",
+      "Nickname":"gabi",
+      "Password":"password",
+      "Document":"08226087623",
+      "Gender":"female",
+      "DateOfBirth":"21-10-1992",
+      "Email":"gabi@email.com",
+      "State":"California",
+      "City":"Cressey",
+      "Zipcode":"31630370",
+      "Phone":"3124761412",
+      "CellPhone":"999456272",
+      "Image":"https://randomuser.me/api/portraits/women/42.jpg"
+    },
+    {
+      "FullName":"Mollie",
+      "Nickname":"mollie",
+      "Password":"password",
+      "Document":"08226087623",
+      "Gender":"female",
+      "DateOfBirth":"21-10-1983",
+      "Email":"mollie@email.com",
+      "State":"North Carolina",
+      "City":"Gerton",
+      "Zipcode":"31630370",
+      "Phone":"3124761412",
+      "CellPhone":"999456272",
+      "Image":"https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+      "FullName":"John Doe",
+      "Nickname":"Doe",
+      "Password":"password",
+      "Document":"08226087623",
+      "Gender":"Male",
+      "DateOfBirth":"21-10-1983",
+      "Email":"john@email.com",
+      "State":"California",
+      "City":"Los Angeles",
+      "Zipcode":"31630370",
+      "Phone":"3124761412",
+      "CellPhone":"999456272",
+      "Image":"https://randomuser.me/api/portraits/men/22.jpg"
+    }
+]

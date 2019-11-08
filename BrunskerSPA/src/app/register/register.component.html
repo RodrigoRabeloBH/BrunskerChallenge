@@ -1,68 +1,68 @@
 <h3>Register Form</h3>
 <hr>
-<form #registerForm="ngForm" class="card p-2" (ngSubmit)="register()">
+<form [formGroup]="registerForm" class="card p-2" (ngSubmit)="register()">
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="inputFullName">Full Name</label>
-            <input type="email" class="form-control" id="inputFullName" required placeholder="John Doe"name="name" [(ngModel)]="model.name">
+            <input type="email" class="form-control" placeholder="John Doe" formControlName="fullName">
         </div>
         <div class="form-group col-md-4">
             <label for="inputNickname">Nickname</label>
-            <input type="text" class="form-control" id="inputNickname" required placeholder="batman" name="nickname" [(ngModel)]="model.nickname">
+            <input type="text" class="form-control" placeholder="batman" formControlName="nickname" tooltip="O Apelido será usado como identificador no sistema">
         </div>
         <div class="form-group col-md-4">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" required placeholder="password" name="password" [(ngModel)]="model.password">
+            <input type="password" class="form-control"  placeholder="password" formControlName="password">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" required placeholder="john@emial.com" name="Email" [(ngModel)]="model.Email">
+            <input type="email" class="form-control" placeholder="john@emial.com" formControlName="email">
         </div>
         <div class="form-group col-md-4">
             <label for="inputDocument">Document</label>
-            <input type="number" class="form-control" id="inputDocument" required placeholder="cpf" name="Document" [(ngModel)]="model.Document">
+            <input type="number" class="form-control" placeholder="cpf" formControlName="document">
         </div>
         <div class="form-group col-md-2">
             <label for="inputGender">Gender</label>
-            <input type="text" class="form-control" id="inputGender" required placeholder="male / female" name="Gender" [(ngModel)]="model.Gender">
+            <input type="text" class="form-control" placeholder="male / female" formControlName="gender">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control" required id="inputCity" name="City" [(ngModel)]="model.City">
+            <input type="text" class="form-control"  formControlName="city">
         </div>
         <div class="form-group col-md-4">
             <label for="inputState">State</label>
-            <input type="text" class="form-control" required id="inputState" name="State" [(ngModel)]="model.State">
+            <input type="text" class="form-control" formControlName="state">
         </div>
         <div class="form-group col-md-2">
             <label for="inputZip">Zipcode</label>
-            <input type="number" class="form-control" required id="inputZip" name="Zipcode" [(ngModel)]="model.Zipcode">
+            <input type="number" class="form-control" formControlName="zipcode">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-3">
             <label for="inputDateOfBirth">Date of Birth</label>
-            <input type="text" class="form-control" id="inputDateOfBirth" required name="Birthdate" [(ngModel)]="model.Birthdate">
+            <input type="text" class="form-control"  formControlName="dateOfbirth">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhone">Phone</label>
-            <input type="number" class="form-control" id="inputPhone" required name="Phone" [(ngModel)]="model.Phone">
+            <input type="number" class="form-control" id="inputPhone" formControlName="phone">
         </div>
         <div class="form-group col-md-3">
             <label for="inputCellPhone">Cell phone</label>
-            <input type="number" class="form-control" id="inputCellPhone" required name="Cellphone" [(ngModel)]="model.Cellphone">
+            <input type="number" class="form-control" id="inputCellPhone" formControlName="cellPhone">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhoto">Photo path</label>
-            <input type="text" class="form-control" id="inputPhoto" required name="Image" [(ngModel)]="model.Image">
+            <input type="text" class="form-control" id="inputPhoto" formControlName="image">
         </div>
     </div>
     <div class="row">
-        <button [disabled]="!registerForm.valid" type="submit" class="btn btn-info btn-md mx-auto">Sign in</button>
+        <button type="submit" class="btn btn-info btn-md mx-auto">Sign in</button>
     </div>
 
 </form>
