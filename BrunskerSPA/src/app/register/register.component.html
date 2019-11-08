@@ -4,61 +4,61 @@
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="inputFullName">Full Name</label>
-            <input type="email" class="form-control" placeholder="John Doe" formControlName="fullName">
+            <input type="email" class="form-control" placeholder="John Doe" required formControlName="fullName">
         </div>
         <div class="form-group col-md-4">
             <label for="inputNickname">Nickname</label>
-            <input type="text" class="form-control" placeholder="batman" formControlName="nickname" tooltip="O Apelido será usado como identificador no sistema">
+            <input type="text" class="form-control" placeholder="batman" required formControlName="nickname" tooltip="O Apelido será usado como identificador no sistema">
         </div>
         <div class="form-group col-md-4">
             <label for="inputPassword">Password</label>
-            <input type="password" class="form-control"  placeholder="password" formControlName="password">
+            <input type="password" class="form-control"  placeholder="password" required formControlName="password">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" placeholder="john@emial.com" formControlName="email">
+            <input type="email" class="form-control" placeholder="john@emial.com" required formControlName="email">
         </div>
         <div class="form-group col-md-4">
             <label for="inputDocument">Document</label>
-            <input type="number" class="form-control" placeholder="cpf" formControlName="document">
+            <input type="number" class="form-control" placeholder="cpf" required formControlName="document">
         </div>
         <div class="form-group col-md-2">
             <label for="inputGender">Gender</label>
-            <input type="text" class="form-control" placeholder="male / female" formControlName="gender">
+            <input type="text" class="form-control" placeholder="male / female"  required formControlName="gender">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control"  formControlName="city">
+            <input type="text" class="form-control"  required formControlName="city">
         </div>
         <div class="form-group col-md-4">
             <label for="inputState">State</label>
-            <input type="text" class="form-control" formControlName="state">
+            <input type="text" class="form-control" required formControlName="state">
         </div>
         <div class="form-group col-md-2">
             <label for="inputZip">Zipcode</label>
-            <input type="number" class="form-control" formControlName="zipcode">
+            <input type="number" class="form-control" required formControlName="zipcode">
         </div>
     </div>
     <div class="form-row">
         <div class="form-group col-md-3">
             <label for="inputDateOfBirth">Date of Birth</label>
-            <input type="date" class="form-control"  formControlName="dateOfBirth">
+            <input type="date" class="form-control"  required formControlName="dateOfBirth">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhone">Phone</label>
-            <input type="number" class="form-control" id="inputPhone" formControlName="phone" pattern="{10}">
+            <input type="number" class="form-control" id="inputPhone" required formControlName="phone" pattern="{10}">
         </div>
         <div class="form-group col-md-3">
             <label for="inputCellPhone">Cell phone</label>
-            <input type="number" class="form-control" id="inputCellPhone" formControlName="cellPhone" pattern="{11}">
+            <input type="number" class="form-control" id="inputCellPhone" required formControlName="cellPhone" pattern="{11}">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhoto">Photo path</label>
-            <input type="text" class="form-control" id="inputPhoto" formControlName="image">
+            <input type="text" class="form-control" id="inputPhoto" required formControlName="image">
         </div>
     </div>
     <div class="row">
