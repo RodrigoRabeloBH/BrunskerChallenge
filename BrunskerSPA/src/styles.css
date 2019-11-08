@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Yeon Sung', cursive;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 a{
     cursor: pointer;
