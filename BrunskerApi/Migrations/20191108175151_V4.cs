@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BrunskerApi.Migrations
 {
-    public partial class Seed : Migration
+    public partial class V4 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,10 +19,10 @@ namespace BrunskerApi.Migrations
                     PasswordSalt = table.Column<byte[]>(nullable: true),
                     Document = table.Column<string>(type: "varchar(11)", maxLength: 11, nullable: false),
                     Gender = table.Column<string>(type: "varchar(9)", maxLength: 9, nullable: false),
-                    DateOfBirth = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "date", nullable: false),
                     Email = table.Column<string>(type: "varchar(120)", maxLength: 120, nullable: false),
-                    Phone = table.Column<string>(type: "varchar(14)", maxLength: 14, nullable: false),
-                    CellPhone = table.Column<string>(type: "varchar(14)", maxLength: 14, nullable: false),
+                    Phone = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
+                    CellPhone = table.Column<string>(type: "varchar(11)", maxLength: 11, nullable: false),
                     State = table.Column<string>(type: "varchar(30)", maxLength: 30, nullable: false),
                     City = table.Column<string>(type: "varchar(30)", maxLength: 30, nullable: false),
                     Zipcode = table.Column<string>(type: "varchar(9)", maxLength: 9, nullable: false),

@@ -21,6 +21,8 @@ export class LoginComponent implements OnInit {
       this.alertifyService.success('Logged in successfully');
     }, err => {
       this.alertifyService.error('Failed to logged');
-    }, () => { this.router.navigate(['/list']); });
+    }, () => {
+        this.router.navigate(['/list']);
+       });
   }
 }

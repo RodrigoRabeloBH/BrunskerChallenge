@@ -14,12 +14,12 @@ namespace BrunskerApi.Data.Mapping
             builder.Property(u => u.Document).IsRequired().HasColumnType("varchar(11)").HasMaxLength(11);            
             builder.Property(u => u.Gender).IsRequired().HasColumnType("varchar(9)").HasMaxLength(9);            
             builder.Property(u => u.Email).IsRequired().HasColumnType("varchar(120)").HasMaxLength(120);
-            builder.Property(u => u.Phone).IsRequired().HasColumnType("varchar(14)").HasMaxLength(14);
-            builder.Property(u => u.CellPhone).IsRequired().HasColumnType("varchar(14)").HasMaxLength(14);
+            builder.Property(u => u.Phone).IsRequired().HasColumnType("varchar(10)").HasMaxLength(10);
+            builder.Property(u => u.CellPhone).IsRequired().HasColumnType("varchar(11)").HasMaxLength(11);
             builder.Property(u => u.State).IsRequired().HasColumnType("varchar(30)").HasMaxLength(30);
             builder.Property(u => u.City).IsRequired().HasColumnType("varchar(30)").HasMaxLength(30);
-            builder.Property(u => u.Zipcode).IsRequired().HasColumnType("varchar(9)").HasMaxLength(9);                       
-            builder.Property(u => u.DateOfBirth).IsRequired().HasColumnType("varchar(10)").HasMaxLength(10);                       
-        }
+            builder.Property(u => u.Zipcode).IsRequired().HasColumnType("varchar(9)").HasMaxLength(9);
+            builder.Property(u => u.DateOfBirth).IsRequired().HasColumnType("date");   
+         }
     }
 }

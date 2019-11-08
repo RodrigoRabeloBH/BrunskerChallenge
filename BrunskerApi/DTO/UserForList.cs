@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace BrunskerApi.DTO
 {
@@ -9,7 +10,10 @@ namespace BrunskerApi.DTO
         public string Nickname { get; set; }
         public string Document { get; set; }
         public string Gender { get; set; }
-        public string DateOfBirth { get; set; }
+        
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="{0: dd/MM/yyyy}")]
+        public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
         public string State { get; set; }
         public string City { get; set; }

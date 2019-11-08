@@ -46,15 +46,15 @@
     <div class="form-row">
         <div class="form-group col-md-3">
             <label for="inputDateOfBirth">Date of Birth</label>
-            <input type="text" class="form-control"  formControlName="dateOfbirth">
+            <input type="date" class="form-control"  formControlName="dateOfBirth">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhone">Phone</label>
-            <input type="number" class="form-control" id="inputPhone" formControlName="phone">
+            <input type="number" class="form-control" id="inputPhone" formControlName="phone" pattern="{10}">
         </div>
         <div class="form-group col-md-3">
             <label for="inputCellPhone">Cell phone</label>
-            <input type="number" class="form-control" id="inputCellPhone" formControlName="cellPhone">
+            <input type="number" class="form-control" id="inputCellPhone" formControlName="cellPhone" pattern="{11}">
         </div>
         <div class="form-group col-md-3">
             <label for="inputPhoto">Photo path</label>

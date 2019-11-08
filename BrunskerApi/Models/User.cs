@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BrunskerApi.Models
@@ -12,8 +11,11 @@ namespace BrunskerApi.Models
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public string Document { get; set; }
-        public string Gender { get; set; }      
-        public string DateOfBirth { get; set; }
+        public string Gender { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="{0: dd/MM/yyyy}")]      
+        public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; } 
         public string CellPhone { get; set; } 

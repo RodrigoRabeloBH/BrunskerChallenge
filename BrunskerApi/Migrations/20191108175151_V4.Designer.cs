@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BrunskerApi.Migrations
 {
     [DbContext(typeof(BrunskerContext))]
-    [Migration("20191108023710_Seed")]
-    partial class Seed
+    [Migration("20191108175151_V4")]
+    partial class V4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -25,18 +25,16 @@ namespace BrunskerApi.Migrations
 
                     b.Property<string>("CellPhone")
                         .IsRequired()
-                        .HasColumnType("varchar(14)")
-                        .HasMaxLength(14);
+                        .HasColumnType("varchar(11)")
+                        .HasMaxLength(11);
 
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("varchar(30)")
                         .HasMaxLength(30);
 
-                    b.Property<string>("DateOfBirth")
-                        .IsRequired()
-                        .HasColumnType("varchar(10)")
-                        .HasMaxLength(10);
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("date");
 
                     b.Property<string>("Document")
                         .IsRequired()
@@ -71,8 +69,8 @@ namespace BrunskerApi.Migrations
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("varchar(14)")
-                        .HasMaxLength(14);
+                        .HasColumnType("varchar(10)")
+                        .HasMaxLength(10);
 
                     b.Property<string>("State")
                         .IsRequired()

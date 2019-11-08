@@ -15,6 +15,8 @@ import { ListComponent } from './list/list.component';
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
+import { ErrorInterceptorProvider } from './_Services/error.interceptor';
+
 
 
 
@@ -40,7 +42,8 @@ import { UsersComponent } from './users/users.component';
       TooltipModule.forRoot(),
    ],
    providers: [
-      AuthService
+      AuthService,
+      ErrorInterceptorProvider
    ],
    bootstrap: [
       AppComponent

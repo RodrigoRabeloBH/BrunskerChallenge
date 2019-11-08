@@ -23,7 +23,8 @@ namespace BrunskerApi.Services
                 var computeHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
                 for(int i = 0; i < computeHash.Length; i++)
                 {
-                    if(computeHash[i] != passwordHash[i])return false;
+                    if(computeHash[i] != passwordHash[i])
+                    return false;
                 }
             }
             return true;
@@ -37,6 +38,7 @@ namespace BrunskerApi.Services
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             }
         }
+        
         public async Task<User> Login(string nickname, string password)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Nickname == nickname);

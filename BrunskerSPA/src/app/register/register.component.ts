@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { AlertifyService } from '../_services/alertify.service';
 import { AuthService } from '../_Services/Auth.service';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { User } from '../_Model/user';
 import { Router } from '@angular/router';
 
@@ -19,19 +19,19 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = new FormGroup({
-      fullname: new FormControl(),
-      nickname : new FormControl(),
-      password: new FormControl(),
-      email: new FormControl(),
-      document: new FormControl(),
-      gender: new FormControl(),
-      city: new FormControl(),
-      state: new FormControl(),
-      zipcode: new FormControl(),
-      birthdate: new FormControl(),
-      phone: new FormControl(),
-      cellphone: new FormControl(),
-      image: new FormControl()
+      fullName: new FormControl('', [Validators.required, Validators.maxLength(120), Validators.minLength(3)]),
+      nickname : new FormControl('', [Validators.required, Validators.maxLength(60), Validators.minLength(3)]),
+      password: new FormControl('', [Validators.required, Validators.maxLength(12), Validators.minLength(4)]),
+      email: new FormControl('', [Validators.required, Validators.maxLength(120), Validators.minLength(7)]),
+      document: new FormControl('', [Validators.required, Validators.maxLength(11), Validators.minLength(11)]),
+      gender: new FormControl('', [Validators.required, Validators.maxLength(9), Validators.minLength(4)]),
+      city: new FormControl('', [Validators.required, Validators.maxLength(30), Validators.minLength(3)]),
+      state: new FormControl('', [Validators.required, Validators.maxLength(30), Validators.minLength(2)]),
+      zipcode: new FormControl('', [Validators.required, Validators.maxLength(9), Validators.minLength(9)]),
+      dateOfBirth: new FormControl('', Validators.required),
+      phone: new FormControl('', [Validators.required, Validators.maxLength(10), Validators.minLength(10)]),
+      cellPhone: new FormControl('', [Validators.required, Validators.maxLength(11), Validators.minLength(11)]),
+      image: new FormControl('', [Validators.required, Validators.maxLength(200), Validators.minLength(5)])
     });
   }
   register() {
@@ -47,5 +47,5 @@ export class RegisterComponent implements OnInit {
         });
       });
     }
-  }
+  }  
 }

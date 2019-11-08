@@ -4,9 +4,11 @@ using AutoMapper;
 using BrunskerApi.DTO;
 using BrunskerApi.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BrunskerApi.Controllers
-{
+{   
+   // [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class UserController:ControllerBase
